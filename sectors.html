@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Sectors We Serve — Majestic Cedar Cleaning</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="shared.js"></script>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+<div id="page-hero-container"></div>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("page-hero-container").innerHTML = renderPageHero('Sectors We Serve', 'Specialized cleaning services tailored for education, healthcare, and hospitality industries.', 'Sectors');
+  });
+</script>
+<section class="section">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:56px;">
+      <span class="section-label">Industries We Serve</span>
+      <h2 class="section-title">Specialist Sector Cleaning</h2>
+      <div class="gold-divider gold-divider--center"></div>
+      <p class="section-subtitle">We deliver premium, compliant cleaning services tailored to the unique operational and regulatory standards of each sector.</p>
+    </div>
+    
+    <div class="sectors-list">
+      <!-- Education Sector -->
+      <div class="sector-panel">
+        <div class="sector-panel__image-wrapper">
+          <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&q=80" alt="Education Sector Cleaning" class="sector-panel__img">
+        </div>
+        <div class="sector-panel__content">
+          <span class="sector-panel__badge">Education Sector</span>
+          <h3 class="sector-panel__title">Schools, Colleges & Nurseries</h3>
+          <p class="sector-panel__desc">We provide clean, safe, and hygienic learning environments that minimize student absences and support academic success. Our staff are fully DBS-checked and trained in child-safe disinfection protocols.</p>
+          <div class="checklist" style="margin-bottom: 32px;">
+            <div class="checklist__item"><div class="checklist__icon">✓</div><div>Classrooms & Lecture Hall Sanitisation</div></div>
+            <div class="checklist__item"><div class="checklist__icon">✓</div><div>Eco-Friendly, Child-Safe Detergents</div></div>
+            <div class="checklist__item"><div class="checklist__icon">✓</div><div>High-Traffic Touchpoint Disinfection</div></div>
+            <div class="checklist__item"><div class="checklist__icon">✓</div><div>DBS-Vetted & Insured Cleaning Staff</div></div>
+          </div>
+          <a href="contact.html" class="btn btn--gold">Book Education Clean</a>
+        </div>
+      </div>
+      
+      <!-- Health Sector -->
+      <div class="sector-panel sector-panel--reverse">
+        <div class="sector-panel__image-wrapper">
+          <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80" alt="Healthcare Sector Cleaning" class="sector-panel__img">
+        </div>
+        <div class="sector-panel__content">
+          <span class="sector-panel__badge">Medical & Health</span>
+          <h3 class="sector-panel__title">Clinics, Dental Practices & Surgery Rooms</h3>
+          <p class="sector-panel__desc">Maintaining clinical hygiene is critical. Our medical cleaning services strictly comply with NHS standards, CQC inspection requirements, and infection control guidelines to keep patient rooms and surgical spaces sterile.</p>
+          <div class="checklist" style="margin-bottom: 32px;">
+            <div class="checklist__item"><div class="checklist__icon">✓</div><div>CQC-Compliant Clinical Sanitisation</div></div>
+            <div class="checklist__item"><div class="checklist__icon">✓</div><div>Cross-Contamination Prevention Protocols</div></div>
+            <div class="checklist__item"><div class="checklist__icon">✓</div><div>Medical Waste Management Support</div></div>
+            <div class="checklist__item"><div class="checklist__icon">✓</div><div>Sterilisation of Waiting Areas & Surgeries</div></div>
+          </div>
+          <a href="contact.html" class="btn btn--gold">Book Healthcare Clean</a>
+        </div>
+      </div>
+      
+      <!-- Hospitality Sector -->
+      <div class="sector-panel">
+        <div class="sector-panel__image-wrapper">
+          <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80" alt="Hospitality Sector Cleaning" class="sector-panel__img">
+        </div>
+        <div class="sector-panel__content">
+          <span class="sector-panel__badge">Hospitality & Leisure</span>
+          <h3 class="sector-panel__title">Hotels, Restaurants, Bars & Spas</h3>
+          <p class="sector-panel__desc">First impressions are everything in hospitality. We help you maintain an immaculate setting that boosts your reviews and keeps guests coming back, ensuring kitchen hygiene and bedroom elegance are pristine.</p>
+          <div class="checklist" style="margin-bottom: 32px;">
+            <div class="checklist__item"><div class="checklist__icon">✓</div><div>Front-of-House & Lobby Deep Cleaning</div></div>
+            <div class="checklist__item"><div class="checklist__icon">✓</div><div>Commercial Kitchen Deep Cleans (EFSA standard)</div></div>
+            <div class="checklist__item"><div class="checklist__icon">✓</div><div>Hotel Room Turndown & Sparkle Cleans</div></div>
+            <div class="checklist__item"><div class="checklist__icon">✓</div><div>Spa, Poolside & Changing Room Sanitisation</div></div>
+          </div>
+          <a href="contact.html" class="btn btn--gold">Book Hospitality Clean</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <div id="footer-placeholder"></div>
+  <script>
+    document.getElementById('header-placeholder').outerHTML = renderTopBar() + renderNav('Sectors');
+    document.getElementById('footer-placeholder').outerHTML = renderFooter();
+    initShared();
+  </script>
+</body>
+</html>

@@ -18,6 +18,7 @@ function renderNav(activePage) {
     { href: 'index.html', label: 'Home' },
     { href: 'about.html', label: 'About' },
     { href: 'services.html', label: 'Services' },
+    { href: 'sectors.html', label: 'Sectors' },
     { href: 'contact.html', label: 'Contact' },
   ];
   const links = pages.map(p => `
@@ -87,6 +88,7 @@ function renderFooter() {
           <ul class="footer__links">
             <li><a href="about.html" class="footer__link">About Us</a></li>
             <li><a href="services.html" class="footer__link">Services</a></li>
+            <li><a href="sectors.html" class="footer__link">Sectors</a></li>
             <li><a href="contact.html" class="footer__link">Contact</a></li>
             <li><a href="#" class="footer__link">Privacy Policy</a></li>
             <li><a href="#" class="footer__link">Terms of Service</a></li>
